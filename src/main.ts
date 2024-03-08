@@ -28,8 +28,8 @@ export default class MainScene extends Phaser.Scene {
     taskDescription = "Збери букет із";
     taskDescription2 = "та";
     taskRaund: {redRoses: number,whiteRoses: number} = {
-        redRoses: Phaser.Math.Between(0, this.rosesAmountOneColor), 
-        whiteRoses: Phaser.Math.Between(0, this.rosesAmountOneColor)
+        redRoses: Phaser.Math.Between(1, 4), 
+        whiteRoses: Phaser.Math.Between(1, 4)
     };
 
     insideVaseRectangle: Phaser.Geom.Rectangle = new Phaser.Geom.Rectangle(751, 290, 430, 450);
@@ -503,8 +503,8 @@ export default class MainScene extends Phaser.Scene {
     
     freshRaund() {
         this.taskRaund = {        
-            redRoses: Phaser.Math.Between(0, this.rosesAmountOneColor), 
-            whiteRoses: Phaser.Math.Between(0, this.rosesAmountOneColor)
+            redRoses: Phaser.Math.Between(1, 4), 
+            whiteRoses: Phaser.Math.Between(1, 4)
         };
 
         this.createTaskDescription();
