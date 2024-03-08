@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "ES6",
+        "baseUrl": ".",
+        "rootDir": "./src",
+        "outDir": "./src",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "moduleResolution": "Node",
+        "paths": {
+            "*": ["node_modules"]
+        },
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
